@@ -36,12 +36,13 @@ class importCSV extends Command
         // $data[4]; // prices.value
 
         try {
-            $file = fopen(storage_path() . "/liveFeed/import.csv", "r");
+
+            $file = fopen(storage_path() . "/files/import.csv", "r");
 
             $i = 0;
 
             while (($data = fgetcsv($file)) !== false) {
-
+                // ignore header
                 if($i === 0) {
                     $i++;
                     continue;
@@ -57,6 +58,9 @@ class importCSV extends Command
 
                 $i++;
             }
+
+            echo "File imported!";
+
         } catch(\ErrorException $e) {
             echo "Error: " . $e->getMessage();
         }
