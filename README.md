@@ -1,6 +1,6 @@
-# ecisolutions
+# Exercise 
 
-## Server side | Laravel
+## Server side | Laravel 10
 ## To import file run
 
 ```php
@@ -34,3 +34,16 @@ php artisan import:csv
 ### Controller
 
 * /server/app/Http/Controllers/ProductPrices.php
+
+***
+
+## Client side | Vue 3 ( w/ Tailwind )
+
+### Files
+* src/App.vue
+* components/buttonComponent.vue
+
+***
+
+[rafaeltpires.dev](https://rafaeltpires.dev/) |
+[me@rafaeltpires.dev](mailto:me@rafaeltpires.dev)
